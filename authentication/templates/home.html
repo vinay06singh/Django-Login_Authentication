@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Home Page</h2>
+    <p>This is the home page content.</p>
+
+    <p>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    </p>
+</body>
+</html>
+
+
